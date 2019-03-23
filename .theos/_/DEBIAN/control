@@ -1,0 +1,10 @@
+Package: com.flowgaming.ownershipalert
+Name: Ownership Alert
+Depends: mobilesubstrate
+Architecture: iphoneos-arm
+Description: Displays an alert when trying to power down containing contact info
+Maintainer: Psaidwid
+Author: Psaidwid
+Section: Tweaks
+Version: 1.2.3-1+debug
+Installed-Size: 204
