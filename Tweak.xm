@@ -70,7 +70,9 @@ static NSString* contactInfo = @"911";
             {
               if (success)
               {
-                [self orderFront];
+                %orig();
+                triggeredAuthentication = NO;
+                //[self orderFront];
               }
               else
               {
