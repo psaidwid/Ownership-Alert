@@ -69,7 +69,6 @@ static NSString* contactInfo = @"";
           {
             if (success)
             {
-<<<<<<< HEAD
               %orig();
             }
             else
@@ -82,23 +81,6 @@ static NSString* contactInfo = @"";
 
               [alert show];
             }
-=======
-              if (success)
-              {
-                [self orderFront];
-              }
-              else
-              {
-                UIAlertView *alert = [[UIAlertView alloc]initWithTitle:@"Authentication Error"
-                message:@"Invalid Fingerprint"
-                delegate:self
-                cancelButtonTitle:@"Okay"
-                otherButtonTitles:nil];
-
-                [alert show];
-              }
-            });
->>>>>>> 5996eb9951f74e65efcf9871193e3d6af6f8a3af
           });
         });
       }];
