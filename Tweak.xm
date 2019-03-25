@@ -31,11 +31,11 @@ static NSString* contactInfo = @"";
   }
 
   userName = [[NSUserDefaults standardUserDefaults] objectForKey:@"textboxName" inDomain:domainString];
-  if ([userName isEqualToNumber:@"")
+  if ([userName isEqualToString:@""])
     userName = @"John Appleseeed";
 
   contactInfo = [[NSUserDefaults standardUserDefaults] objectForKey:@"textboxContact" inDomain:domainString];
-  if ([contactInfo isEqualToNumber:@"")
+  if ([contactInfo isEqualToString:@""])
     contactInfo = @"911";
 
   UIAlertView *alertInfo = [[UIAlertView alloc]initWithTitle:[NSString stringWithFormat:@"Property of %@", userName]
