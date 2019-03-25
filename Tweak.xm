@@ -52,7 +52,7 @@ static NSString* contactInfo = @"";
     return;
   }
 
-  if (allowTouchIDBypass && !triggeredAuthentication)
+  if (allowTouchIDBypass)
   {
     LAContext *context = [[LAContext alloc] init];
     NSError *error = nil;
