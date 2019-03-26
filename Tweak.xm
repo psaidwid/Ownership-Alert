@@ -17,12 +17,9 @@ static NSString* contactInfo = @"";
 
 -(void)orderFront
 {
-  NSNumber *d = (NSNumber *)[[NSUserDefaults standardUserDefaults] objectForKey:@"switchEnableTweak" inDomain:domainString];
-  osaIsEnabled = (d)? [d boolValue]:NO;
-  d = (NSNumber *)[[NSUserDefaults standardUserDefaults] objectForKey:@"switchDisablePowerMenu" inDomain:domainString];
-  powerMenuIsDisabled = (d)? [d boolValue]:NO;
-  d = (NSNumber *)[[NSUserDefaults standardUserDefaults] objectForKey:@"switchTouchIDBypass" inDomain:domainString];
-  allowTouchIDBypass = (d)? [d boolValue]:NO;
+  osaIsEnabled = [[NSUserDefaults standardUserDefaults] boolForKey:@"switchEnableTweak" inDomain:domainString];
+  powerMenuIsDisabled = [[NSUserDefaults standardUserDefaults] boolForKey:@"switchDisablePowerMenu" inDomain:domainString];
+  allowTouchIDBypass = [[NSUserDefaults standardUserDefaults] boolForKey:@"switchTouchIDBypass" inDomain:domainString];
 
   if (!osaIsEnabled)
   {
