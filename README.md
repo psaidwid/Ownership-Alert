@@ -2,7 +2,7 @@
 
 ## Installing
 
-You can either compile from source using Theos, or add my repo ```http://73.178.91.46/repo``` to cydia
+You can either compile from source using Theos, or add my repo ```https://repo.flowgaming.org``` to cydia
 
 ## Changing Settings
 
